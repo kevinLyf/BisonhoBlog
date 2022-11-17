@@ -16,7 +16,7 @@
 
 body {
     font-size: 1rem;
-    background-color: var(--bg-bg);
+    background-color: var(--body-bg);
     font-family: "Lato", sans-serif;
 }
 
@@ -24,6 +24,8 @@ body {
     padding: 1rem .9rem;
     background-color: var(--nav-bg);
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -31,7 +33,7 @@ body {
 }
 
 .logo-title-white {
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .navbar ul {
@@ -50,7 +52,7 @@ body {
 }
 
 .navbar ul li a {
-    color: #FFFFFF;
+    color: #fff;
     border-radius: .7rem;
     transition: .3s;
 }
@@ -60,19 +62,114 @@ body {
 
 .navbar ul li a:hover {
     color: #f7b600;
-    background-color: #FFFFFF;
+    background-color: #fff;
+}
+
+/* MAIN */
+#area-principal{
+    margin: 0 auto;
+    width: 57.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+#area-postagens{
+    width: 41.25rem;
+}
+#area-lateral{
+    width: 15rem;
+    margin-left: 1.2rem;
+}
+.postagem{
+    padding: 1rem;
+    background-color: #fff;
+}
+.postagem-imagem{
+    width: 39rem;
+}
+.postagem-titulo{
+    color: #f7b600;
+}
+.postagem-data{
+    font-size: 0.8rem;
+    display: block;
+    padding-bottom: 0.8rem;
+}
+.postagem p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.8rem;
+}
+.postagem a{
+    text-decoration: none;
+}
+.postagem a:visited, .postagem a:link {
+    color: #f7b600;
+}
+.postagem a:hover{
+    text-decoration: underline;
+}
+.texto-postagem-lateral {
+    background-color: #fff;
+    margin-bottom: .6rem;
+}
+.texto-postagem-lateral p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: .4rem 0;
+}
+.conteudo-lateral-titulo {
+    padding: .6rem .6rem;
+    background-color: #CCC;
+    
+}
+.conteudo-lateral {
+    background-color: #fff;
+    margin-bottom: .6rem;
+    padding: 1rem;
+}
+.conteudo-lateral a {
+    color: #f7b600;
+    margin: .1rem 0;
+}
+.conteudo-lateral a:hover {
+    transition: .3s ease;
+    color: #d69e04;
+    text-decoration: underline;
+
+}
+.navegacao-lateral {
+    display: flex;
+    flex-direction: column;
+}
+.conteudo-lateral-titulo {
+    font-size: 14pt;
+}
+.texto-postagem-lateral hr {
+    margin: .5rem 0;
 }
 
 
-/* RESPONSIVIDADE */
+footer {
+    max-width: 57.5rem;
+    margin: 0 auto;
+    background-color: #CCC;
+    text-align: center;
+    margin-top: 1rem;
 
+}
+/* RESPONSIVIDADE */
 @media (max-width:600px) {
+    
     .header {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
     .logo-title {
         font-size: 18pt;
     }
